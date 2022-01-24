@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/05_timer'
 
 describe 'time_string' do

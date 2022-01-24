@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/04_simon_says'
 
 describe "Simon says" do
@@ -79,5 +81,4 @@ describe "Simon says" do
       expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
     end
   end
-
 end

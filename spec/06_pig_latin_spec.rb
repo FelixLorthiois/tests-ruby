@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../lib/06_pig_latin'
 
 describe "#translate" do
-
   it "translates a word beginning with a vowel" do
     s = translate("apple")
     expect(s).to eq("appleay")
@@ -49,5 +50,4 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
-
 end
