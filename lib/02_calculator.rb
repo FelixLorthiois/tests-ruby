@@ -1,21 +1,23 @@
-def add(a,b)
-  return a + b
+# frozen_string_literal: true
+
+def add(a, b)
+  a + b
 end
 
-def subtract(a,b)
-  return a - b
+def subtract(a, b)
+  a - b
 end
 
 def sum(array)
-  return array.sum
+  array.sum
 end
 
-def multiply(a,b)
-  return a*b
+def multiply(a, b)
+  a * b
 end
 
-def power(a,b)
-  return a ** b
+def power(a, b)
+  a**b
 end
 
 def factorial(a)

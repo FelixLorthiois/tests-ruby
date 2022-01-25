@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 require_relative '../lib/01_temperature'
 
 describe "temperature conversion functions" do
-
   describe "#ftoc" do
-
     it "converts freezing temperature" do
       expect(ftoc(32)).to eq(0)
     end
@@ -19,11 +19,9 @@ describe "temperature conversion functions" do
     it "converts arbitrary temperature" do
       expect(ftoc(68)).to eq(20)
     end
-
   end
 
   describe "#ctof" do
-
     it "converts freezing temperature" do
       expect(ctof(0)).to eq(32)
     end
@@ -44,7 +42,5 @@ describe "temperature conversion functions" do
       # and http://en.wikipedia.org/wiki/Double_precision_floating-point_format
       # Also, try "puts 0.5 - 0.4 - 0.1" -- pretty crazy, right?
     end
-
   end
-
 end

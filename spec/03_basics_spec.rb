@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/03_basics'
 
 describe 'who is the biggest number' do
@@ -24,7 +26,6 @@ describe 'crazy stuff on strings' do
   end
 end
 
-
 describe '42 finder' do
   # array_42 takes an array as parameter and returns:
   # - true if there's a 42 in the array items
@@ -32,11 +33,10 @@ describe '42 finder' do
   # Hint: Should be 2 lines (and can be one :)
   # Hint: google ruby array each
   it 'finds 42' do
-    expect(array_42([1, 2, 3, 4, 5, 6, 7 , 8, 9, 10])).to eq false
-    expect(array_42([1, 2, 3, 4, 5, 6, 7 , 8, 9, 42, 21, 10.5])).to eq true
+    expect(array_42([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).to eq false
+    expect(array_42([1, 2, 3, 4, 5, 6, 7, 8, 9, 42, 21, 10.5])).to eq true
   end
 end
-
 
 describe 'crazy stuff on arrays' do
   # The magic_array function takes an array of number or an array of
