@@ -2,8 +2,8 @@
 # Step 1 : déterminer le phonem pour un mot donné. Le phonem etant défini comme l'ensemble des consonnes comsécutives au début du mot, incluant le 'u' si celui çi succède directement à cette ensemble de consonnes. Si le mot commence par une voyelle, le phonem est nil
 def phonem(word)
   phonem_str = word.downcase.split(/([aeiou].*)/).first
-  # ajout du 'q' au phonem s'il succéde directement au phonem
-  if phonem_str.length > 0 && word[phonem_str.length].downcase == "u"
+  # ajout du 'u' au phonem s'il succéde directement au phonem
+  if phonem_str.length > 0 && word[phonem_str.length-1].downcase == "q" && word[phonem_str.length].downcase == "u"
     phonem_str << "u"
   end
   return phonem_str
